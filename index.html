@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harish Rajput | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-gray-800 p-4 shadow-lg z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Harish Rajput</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+                <li><a href="#skills" class="hover:text-yellow-400">Skills</a></li>
+                <li><a href="#experience" class="hover:text-yellow-400">Experience</a></li>
+                <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col justify-center items-center text-center">
+        <img src="HArish.JPG" alt="Harish Rajput" class="w-40 h-40 rounded-full border-4 border-yellow-400 shadow-lg mb-4">
+        <h2 class="text-5xl font-bold">Hello, I'm Harish Rajput</h2>
+        <p class="text-xl text-gray-400 mt-2">IT Support & Networking Professional</p>
+        <a href="#contact" class="mt-5 bg-yellow-400 text-black px-5 py-2 rounded-full hover:bg-yellow-500">Hire Me</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 text-center bg-gray-800">
+        <h2 class="text-3xl font-semibold text-yellow-400">About Me</h2>
+        <p class="max-w-4xl mx-auto mt-4 text-gray-400">
+            I am a dedicated and skilled IT professional with over 3 years of experience in technical support, system engineering, and desktop support. 
+            I hold a degree from R.M.L.A.U., Ayodhya, and a certification in Computer Hardware & Networking Engineering from Jetking.
+        </p>
+        <p class="max-w-4xl mx-auto mt-4 text-gray-400">
+            I have worked with companies like **Insiza Technologies, Frontier Business Systems, and Shyam Infotech**, providing technical support for clients such as **Bajaj Finserv Ltd., Tata Communications Transformation Services, and KM Sugar Mills Ltd.**
+        </p>
+        <div class="max-w-3xl mx-auto mt-6 grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-400">
+            <div>
+                <strong class="text-yellow-400">Operating Systems:</strong> <br>
+                Windows XP, 7, 8, 10, 11, Ubuntu, Kali Linux
+            </div>
+            <div>
+                <strong class="text-yellow-400">Software & Applications:</strong> <br>
+                Microsoft Office, Oracle, Cisco VPN, AutoCAD
+            </div>
+            <div>
+                <strong class="text-yellow-400">Hardware & Networking:</strong> <br>
+                Troubleshooting, TCP/IP, cabling, LAN
+            </div>
+            <div>
+                <strong class="text-yellow-400">Tools & Technologies:</strong> <br>
+                ServiceNow, SCCM, Wireshark, Cisco Jabber
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 text-center">
+        <h2 class="text-3xl font-semibold">Technical Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-6">
+            <div class="p-4 bg-gray-700 rounded-lg">IT Support & Troubleshooting</div>
+            <div class="p-4 bg-gray-700 rounded-lg">Networking (LAN, VPN, Cisco)</div>
+            <div class="p-4 bg-gray-700 rounded-lg">Windows & Linux OS</div>
+            <div class="p-4 bg-gray-700 rounded-lg">HTML, CSS, JavaScript</div>
+            <div class="p-4 bg-gray-700 rounded-lg">ServiceNow, SCCM, VPN</div>
+             <div class="p-4 bg-gray-700 rounded-lg">Wireshark Configuration</div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 text-center bg-gray-800">
+        <h2 class="text-3xl font-semibold">Work Experience</h2>
+        <ul class="max-w-2xl mx-auto mt-6 space-y-4 text-gray-400">
+            <li><strong>Technical Support Engineer</strong> - Insiza Technologies Pvt. Ltd.</li>
+            <li><strong>System Engineer</strong> - Frontier Business Systems Pvt. Ltd.</li>
+            <li><strong>Desktop Support Engineer</strong> - Shyam Infotech Services Pvt. Ltd.</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 text-center">
+        <h2 class="text-3xl font-semibold">Contact Me</h2>
+        <p class="text-gray-400">Email: me.harishrajput@icloud.com</p>
+        <p class="text-gray-400">LinkedIn: 
+            <a href="https://www.linkedin.com/in/harish-rajput-19a75b21a" class="text-yellow-400">
+                linkedin.com/in/harish-rajput-19a75b21a
+            </a>
+        </p>
+        <a href="Harish_Rajput_CV.pdf" download class="mt-4 inline-block bg-yellow-400 text-black px-5 py-2 rounded-full hover:bg-yellow-500">
+            Download Resume
+        </a>
+        <form class="mt-6 max-w-md mx-auto" action="mailto:me.harishrajput@icloud.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" class="w-full p-2 rounded bg-gray-700 text-white mb-3">
+            <input type="email" name="email" placeholder="Your Email" class="w-full p-2 rounded bg-gray-700 text-white mb-3">
+            <textarea name="message" placeholder="Your Message" class="w-full p-2 rounded bg-gray-700 text-white mb-3"></textarea>
+            <button type="submit" class="bg-yellow-400 text-black px-5 py-2 rounded-full hover:bg-yellow-500">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-gray-900 text-center text-gray-500">
+        © 2025 Harish Rajput | IT Professional
+    </footer>
+</body>
+</html>
