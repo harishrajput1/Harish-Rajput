@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Image Enhancement Tool</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        canvas {
+            max-width: 90vw;
+            max-height: 70vh;
+            width: auto;
+            height: auto;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-start py-10">
+    <h1 class="text-4xl font-bold text-yellow-400 mb-6">Image Enhancement Tool</h1>
+    <input type="file" id="upload" accept="image/*" class="mb-4 text-white">
+    <canvas id="canvas" class="mx-auto border rounded shadow-lg mb-4"></canvas>
+    <div class="flex justify-center gap-6 mb-6">
+        <div>
+            <label for="brightness" class="block mb-1">Brightness</label>
+            <input type="range" id="brightness" min="0" max="200" value="100" class="w-40">
+        </div>
+        <div>
+            <label for="contrast" class="block mb-1">Contrast</label>
+            <input type="range" id="contrast" min="0" max="200" value="100" class="w-40">
+        </div>
+    </div>
+    <button onclick="downloadImage()" class="bg-yellow-400 text-black px-4 py-2 rounded hover:bg-yellow-500 mb-4">
+        Download Enhanced Image
+    </button>
+    <a href="index.html" class="text-yellow-400 underline hover:text-yellow-500 mt-2">← Back to Portfolio</a>
+    <script src="enhance.js"></script>
+</body>
+</html>
